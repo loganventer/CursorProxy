@@ -27,7 +27,7 @@ builder.Services.Configure<JsonOptions>(o =>
 var app = builder.Build();
 
 // ---------- Config ----------
-var ollamaBase = Environment.GetEnvironmentVariable("OLLAMA_BASE") ?? "http://127.0.0.1:11434"; // bv. http://192.168.0.100:11434
+var ollamaBase = Environment.GetEnvironmentVariable("OLLAMA_BASE") ?? "http://192.168.100:11434"; // bv. http://192.168.0.100:11434
 var listenAddr = Environment.GetEnvironmentVariable("PROXY_LISTEN") ?? "http://0.0.0.0:8080";
 
 // Basic CORS (local dev)
